@@ -1,392 +1,679 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inbox Infotech</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Navbar -->
     <header class="header">
-        <div class="container header__inner">
-            <a href="#" class="header__logo">
-                <img src="image/inbox-logo.png" alt="Inbox Infotech" width="150px" />
-            </a>
-            <nav class="header__nav">
-                <a href="#home">About</a>
-                <a href="#services">Services</a>
-                <a href="#expertise">Expertise</a>
-                <a href="#whyus">Why us</a>
-                <a href="#faq">FAQ</a>
-            </nav>
-            <div class="header__actions">
-                <a href="tel:+919560790070" class="btn btn--outline" style="border-color: rgba(0, 240, 255, 0.3); color: #00f0ff;"><i class="fas fa-phone-alt" style="margin-right: 8px;"></i> Contact us</a>
-                <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
-            </div>
+      <div class="container header__inner">
+        <a href="#" class="header__logo">
+          <img src="image/inbox-logo.png" alt="Inbox Infotech" width="150px" />
+        </a>
+        <nav class="header__nav">
+          <a href="#home">About</a>
+          <a href="#services">Services</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#whyus">Why us</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="header__actions">
+          <a
+            href="tel:+919560790070"
+            class="btn btn--outline"
+            style="border-color: rgba(0, 240, 255, 0.3); color: #00f0ff"
+            ><i class="fas fa-phone-alt" style="margin-right: 8px"></i> Contact
+            us</a
+          >
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
+      </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero container" id="home">
-            <div class="hero__content">
-                <div class="badge">
-                    <span class="badge__icon"><i class="fas fa-star"></i></span>
-                    Inbox Infotech premium services
-                </div>
-                <h1 class="hero__title">
-                    Build <span class="text-glow">smart<br>systems</span> that<br>connect products,<br>people, and<br>growth.
-                </h1>
-                <p class="hero__subtitle">
-                    Experience IT solutions engineered by INBOX INFOTECH. We help businesses innovate rapidly, enhance digital operations, and scale globally with our premium suite of technical services.
-                </p>
-                <div class="hero__cta">
-                    <a href="#" class="btn btn--primary">Get a free proposal <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></a>
-                    <a href="#" class="btn btn--text" style="color: #94a3b8; font-weight: 500;">Our projects &rarr;</a>
-                </div>
-                <div class="hero__stats">
-                    <div class="stat">
-                        <span class="stat__label">Active Projects</span>
-                        <span class="stat__value">124+ in 2024</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat__label">Live products</span>
-                        <span class="stat__value">4,000,000+ Downloads</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat__label">Global clients</span>
-                        <span class="stat__value">UAE - Oman - USA</span>
-                    </div>
-                </div>
+      <!-- Hero Section -->
+      <section class="hero container" id="home">
+        <div class="hero__content">
+          <div class="badge">
+            <span class="badge__icon"><i class="fas fa-star"></i></span>
+            Inbox Infotech premium services
+          </div>
+          <h1 class="hero__title">
+            Build
+            <span class="text-glow">smart<br />systems</span> that<br />connect
+            products,<br />people, and<br />growth.
+          </h1>
+          <p class="hero__subtitle">
+            Experience IT solutions engineered by INBOX INFOTECH. We help
+            businesses innovate rapidly, enhance digital operations, and scale
+            globally with our premium suite of technical services.
+          </p>
+          <div class="hero__cta">
+            <a href="#contactForm" class="btn btn--primary">
+              Get a free proposal
+              <i class="fas fa-arrow-right" style="margin-left: 8px"></i>
+            </a>
+            <!-- <a href="#" class="btn btn--text" style="color: #94a3b8; font-weight: 500;">Our projects &rarr;</a> -->
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__label">Active Projects</span>
+              <span class="stat__value">124+ in 2024</span>
             </div>
-            <div class="hero__visual">
-                <!-- App Mockup Recreation -->
-                <div class="app-mockup">
-                    <div class="app-header">
-                        <div class="dots"><span></span><span></span><span></span></div>
-                        <div class="app-badge">UI/UX Interface</div>
-                    </div>
-                    <div class="app-body">
-                        <div class="app-card main-card">
-                            <div class="app-card-header">
-                                <div class="app-icon purple"><i class="fas fa-cubes"></i></div>
-                                <span>App Portfolio<br>Overview</span>
-                            </div>
-                            <div class="app-grid">
-                                <div class="mini-block"><i class="fas fa-layer-group"></i> Tech<br>Stack</div>
-                                <div class="mini-block"><i class="fas fa-users"></i> Active<br>Users</div>
-                                <div class="mini-block"><i class="fas fa-desktop"></i> UI/UX<br>Flow</div>
-                                <div class="mini-block"><i class="fas fa-code-branch"></i> Dev<br>Ops</div>
-                                <div class="mini-block"><i class="fas fa-rocket"></i> Launch<br>Date</div>
-                                <div class="mini-block"><i class="fas fa-sync-alt"></i> Sprint<br>Track</div>
-                            </div>
-                        </div>
-                        <div class="app-side">
-                            <div class="app-card side-card blue-card">
-                                <div class="app-icon cyan"><i class="fas fa-code"></i></div>
-                                <h4>Codebase active<br>development</h4>
-                                <p>Inbox Infotech maintains codebase efficiently, implementing CI/CD pipelines to ensure rapid iteration, clean software delivery.</p>
-                            </div>
-                            <div class="app-card side-card">
-                                <div class="app-user-block">
-                                    <div class="avatar"><i class="fas fa-user"></i></div>
-                                    <div class="user-details">
-                                        <strong>Project Lead Setup</strong>
-                                        <div class="status online"><span></span> Online</div>
-                                    </div>
-                                </div>
-                                <ul class="app-list">
-                                    <li class="active"><i class="fas fa-check-circle"></i> Wireframes</li>
-                                    <li class="active"><i class="fas fa-check-circle"></i> Design Handoff</li>
-                                    <li class="active"><i class="fas fa-check-circle"></i> Backend API</li>
-                                    <li><i class="far fa-circle text-gray"></i> Testing Phase</li>
-                                    <li><i class="far fa-circle text-gray"></i> Launch</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="stat">
+              <span class="stat__label">Live products</span>
+              <span class="stat__value">4,000,000+ Downloads</span>
             </div>
-        </section>
+            <div class="stat">
+              <span class="stat__label">Global clients</span>
+              <span class="stat__value">UAE - UK - USA</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <!-- App Mockup Recreation -->
+          <div class="app-mockup">
+            <div class="app-header">
+              <div class="dots"><span></span><span></span><span></span></div>
+              <div class="app-badge">UI/UX Interface</div>
+            </div>
+            <div class="app-body">
+              <div class="app-card main-card">
+                <div class="app-card-header">
+                  <div class="app-icon purple">
+                    <i class="fas fa-cubes"></i>
+                  </div>
+                  <span>App Portfolio<br />Overview</span>
+                </div>
+                <div class="app-grid">
+                  <div class="mini-block">
+                    <i class="fas fa-layer-group"></i> Tech<br />Stack
+                  </div>
+                  <div class="mini-block">
+                    <i class="fas fa-users"></i> Active<br />Users
+                  </div>
+                  <div class="mini-block">
+                    <i class="fas fa-desktop"></i> UI/UX<br />Flow
+                  </div>
+                  <div class="mini-block">
+                    <i class="fas fa-code-branch"></i> Dev<br />Ops
+                  </div>
+                  <div class="mini-block">
+                    <i class="fas fa-rocket"></i> Launch<br />Date
+                  </div>
+                  <div class="mini-block">
+                    <i class="fas fa-sync-alt"></i> Sprint<br />Track
+                  </div>
+                </div>
+              </div>
+              <div class="app-side">
+                <div class="app-card side-card blue-card">
+                  <div class="app-icon cyan"><i class="fas fa-code"></i></div>
+                  <h4>Codebase active<br />development</h4>
+                  <p>
+                    Inbox Infotech maintains codebase efficiently, implementing
+                    CI/CD pipelines to ensure rapid iteration, clean software
+                    delivery.
+                  </p>
+                </div>
+                <div class="app-card side-card">
+                  <div class="app-user-block">
+                    <div class="avatar"><i class="fas fa-user"></i></div>
+                    <div class="user-details">
+                      <strong>Project Lead Setup</strong>
+                      <div class="status online"><span></span> Online</div>
+                    </div>
+                  </div>
+                  <ul class="app-list">
+                    <li class="active">
+                      <i class="fas fa-check-circle"></i> Wireframes
+                    </li>
+                    <li class="active">
+                      <i class="fas fa-check-circle"></i> Design Handoff
+                    </li>
+                    <li class="active">
+                      <i class="fas fa-check-circle"></i> Backend API
+                    </li>
+                    <li>
+                      <i class="far fa-circle text-gray"></i> Testing Phase
+                    </li>
+                    <li><i class="far fa-circle text-gray"></i> Launch</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Services Section -->
-        <section class="services container" id="services">
-            <div class="section-head">
-                <!-- <div class="badge badge--small">Our services</div> -->
-                <!-- <h2 class="section-title">A premium landing page narrative<br>for high-value digital transformation</h2> -->
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-desc">Inbox Infotech engages in building highly scalable applications that streamline workflows, ensuring peak performance and reliability across multiple platforms.</p>
-            </div>
-            
-            <div class="services__grid">
-                <!-- Card 1 -->
-                <div class="service-card">
-                    <div class="service-card__icon"><i class="fas fa-pen-nib"></i></div>
-                    <h3>CX, Design & Strategy</h3>
-                    <p>Elevate the digital experience by focusing on end-user interactions, mapping the customer journey, and shaping long-term brand strategy.</p>
-                    <a href="#" class="card-link">Learn more &rarr;</a>
-                </div>
-                <!-- Card 2 -->
-                <div class="service-card">
-                    <div class="service-card__icon"><i class="fas fa-shopping-cart"></i></div>
-                    <h3>IT / ERP & Commerce</h3>
-                    <p>Streamline complex back-office business operations, robust backend ERP systems, and modern ecommerce architecture implementations.</p>
-                    <a href="#" class="card-link">Learn more &rarr;</a>
-                </div>
-                <!-- Card 3 -->
-                <div class="service-card">
-                    <div class="service-card__icon"><i class="fas fa-robot"></i></div>
-                    <h3>AI / ML & Automation</h3>
-                    <p>Harness artificial intelligence, machine learning models, and automated logic to reduce manual tasks, enhance efficiency, and increase ROI.</p>
-                    <a href="#" class="card-link">Learn more &rarr;</a>
-                </div>
-                <!-- Card 4 -->
-                <div class="service-card">
-                    <div class="service-card__icon"><i class="fas fa-chart-pie"></i></div>
-                    <h3>BI, Dashboards & Analytics</h3>
-                    <p>Visualize critical enterprise data through custom dashboards, real-time analytics, and comprehensive reporting to drive strategic decisions.</p>
-                    <a href="#" class="card-link">Learn more &rarr;</a>
-                </div>
-                <!-- Card 5 -->
-                <div class="service-card">
-                    <div class="service-card__icon"><i class="fas fa-search"></i></div>
-                    <h3>Product Mgt & User insights</h3>
-                    <p>Lead the complete lifecycle of product engineering, validate concepts using telemetry metrics, user feedback, and iterative prototypes.</p>
-                    <a href="#" class="card-link">Learn more &rarr;</a>
-                </div>
-                <!-- Card 6 -->
-                <div class="service-card">
-                    <div class="service-card__icon"><i class="fas fa-layer-group"></i></div>
-                    <h3>Low-Code / No-Code</h3>
-                    <p>Accelerate your time-to-market by using cutting-edge visual development engines and robust platform integrations.</p>
-                    <a href="#" class="card-link">Learn more &rarr;</a>
-                </div>
-            </div>
-        </section>
+      <!-- Services Section -->
+      <section class="services container" id="services">
+        <div class="section-head">
+          <!-- <div class="badge badge--small">Our services</div> -->
+          <!-- <h2 class="section-title">A premium landing page narrative<br>for high-value digital transformation</h2> -->
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-desc">
+            Inbox Infotech engages in building highly scalable applications that
+            streamline workflows, ensuring peak performance and reliability
+            across multiple platforms.
+          </p>
+        </div>
 
-        <!-- Stack Architecture Section -->
-        <section class="stack container" id="expertise">
-            <div class="stack__text">
-                <div class="badge badge--small">Tech Stack</div>
-                <h2 class="section-title">Modern stack<br>architecture presented<br>with clarity and<br>confidence</h2>
-                <p class="section-desc">Inbox Infotech delivers technical excellence by leveraging cutting-edge web & mobile frameworks, robust databases, and highly scalable cloud architectures.</p>
+        <div class="services__grid">
+          <!-- Card 1 -->
+          <div class="service-card">
+            <div class="service-card__icon"><i class="fas fa-pen-nib"></i></div>
+            <h3>CX, Design & Strategy</h3>
+            <p>
+              Elevate the digital experience by focusing on end-user
+              interactions, mapping the customer journey, and shaping long-term
+              brand strategy.
+            </p>
+            <a href="#" class="card-link">Learn more &rarr;</a>
+          </div>
+          <!-- Card 2 -->
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class="fas fa-shopping-cart"></i>
             </div>
-            <div class="stack__grid">
-                <div class="stack-card">
-                    <div class="stack-card__header"><i class="fas fa-desktop"></i> Frontend</div>
-                    <div class="stack-pills">
-                        <span>React</span><span>Angular</span><span>Vue.js</span><span>Next.js</span>
-                    </div>
-                </div>
-                <div class="stack-card">
-                    <div class="stack-card__header"><i class="fas fa-server"></i> Backend</div>
-                    <div class="stack-pills">
-                        <span>Node.js</span><span>Python</span><span>Java</span><span>PHP</span>
-                    </div>
-                </div>
-                <div class="stack-card">
-                    <div class="stack-card__header"><i class="fas fa-cloud"></i> Cloud & Devops</div>
-                    <div class="stack-pills">
-                        <span>AWS</span><span>Azure</span><span>GCP</span><span>Docker</span>
-                    </div>
-                </div>
-                <div class="stack-card">
-                    <div class="stack-card__header"><i class="fas fa-database"></i> Database</div>
-                    <div class="stack-pills">
-                        <span>PostgreSQL</span><span>MongoDB</span><span>Redis</span><span>MySQL</span>
-                    </div>
-                </div>
+            <h3>IT / ERP & Commerce</h3>
+            <p>
+              Streamline complex back-office business operations, robust backend
+              ERP systems, and modern ecommerce architecture implementations.
+            </p>
+            <a href="#" class="card-link">Learn more &rarr;</a>
+          </div>
+          <!-- Card 3 -->
+          <div class="service-card">
+            <div class="service-card__icon"><i class="fas fa-robot"></i></div>
+            <h3>AI / ML & Automation</h3>
+            <p>
+              Harness artificial intelligence, machine learning models, and
+              automated logic to reduce manual tasks, enhance efficiency, and
+              increase ROI.
+            </p>
+            <a href="#" class="card-link">Learn more &rarr;</a>
+          </div>
+          <!-- Card 4 -->
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class="fas fa-chart-pie"></i>
             </div>
-        </section>
+            <h3>BI, Dashboards & Analytics</h3>
+            <p>
+              Visualize critical enterprise data through custom dashboards,
+              real-time analytics, and comprehensive reporting to drive
+              strategic decisions.
+            </p>
+            <a href="#" class="card-link">Learn more &rarr;</a>
+          </div>
+          <!-- Card 5 -->
+          <div class="service-card">
+            <div class="service-card__icon"><i class="fas fa-search"></i></div>
+            <h3>Product Mgt & User insights</h3>
+            <p>
+              Lead the complete lifecycle of product engineering, validate
+              concepts using telemetry metrics, user feedback, and iterative
+              prototypes.
+            </p>
+            <a href="#" class="card-link">Learn more &rarr;</a>
+          </div>
+          <!-- Card 6 -->
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <h3>Low-Code / No-Code</h3>
+            <p>
+              Accelerate your time-to-market by using cutting-edge visual
+              development engines and robust platform integrations.
+            </p>
+            <a href="#" class="card-link">Learn more &rarr;</a>
+          </div>
+        </div>
+      </section>
 
-        <!-- Process Section -->
-        <section class="process container" id="whyus">
-            <div class="section-head section-head--center mx-auto text-center" style="max-width: 600px; margin: 0 auto; text-align: center;">
-                <div class="badge badge--small mx-auto" style="margin: 0 auto;">How we work</div>
-                <h2 class="section-title">A process that earns trust from<br>enterprise buyers</h2>
-                <p class="section-desc">We leverage proven frameworks to build, deploy, and scale robust enterprise platforms that drive digital excellence.</p>
+      <!-- Stack Architecture Section -->
+      <section class="stack container" id="expertise">
+        <div class="stack__text">
+          <div class="badge badge--small">Tech Stack</div>
+          <h2 class="section-title">
+            Modern stack<br />architecture presented<br />with clarity and<br />confidence
+          </h2>
+          <p class="section-desc">
+            Inbox Infotech delivers technical excellence by leveraging
+            cutting-edge web & mobile frameworks, robust databases, and highly
+            scalable cloud architectures.
+          </p>
+        </div>
+        <div class="stack__grid">
+          <div class="stack-card">
+            <div class="stack-card__header">
+              <i class="fas fa-desktop"></i> Frontend
             </div>
-            <div class="process__steps">
-                <div class="process-step">
-                    <div class="step-num">01</div>
-                    <h4>Discover</h4>
-                    <p>Comprehensive requirements analysis, ideation, and defining project scope.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">02</div>
-                    <h4>Architect</h4>
-                    <p>System design, database architecture, and technology stack selection.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">03</div>
-                    <h4>Build</h4>
-                    <p>Agile software engineering, rigorous coding, and frontend execution.</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-num">04</div>
-                    <h4>Scale</h4>
-                    <p>Deploy to production environments, optimize performance, and maintenance.</p>
-                </div>
+            <div class="stack-pills">
+              <span>React</span><span>Angular</span><span>Vue.js</span
+              ><span>Next.js</span>
             </div>
-        </section>
+          </div>
+          <div class="stack-card">
+            <div class="stack-card__header">
+              <i class="fas fa-server"></i> Backend
+            </div>
+            <div class="stack-pills">
+              <span>Node.js</span><span>Python</span><span>Java</span
+              ><span>PHP</span>
+            </div>
+          </div>
+          <div class="stack-card">
+            <div class="stack-card__header">
+              <i class="fas fa-cloud"></i> Cloud & Devops
+            </div>
+            <div class="stack-pills">
+              <span>AWS</span><span>Azure</span><span>GCP</span
+              ><span>Docker</span>
+            </div>
+          </div>
+          <div class="stack-card">
+            <div class="stack-card__header">
+              <i class="fas fa-database"></i> Database
+            </div>
+            <div class="stack-pills">
+              <span>PostgreSQL</span><span>MongoDB</span><span>Redis</span
+              ><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <!-- Ecosystem Section -->
-        <section class="ecosystem container" id="ecosystem">
-            <div class="section-head">
-                <div class="badge badge--small">Our Work</div>
-                <h2 class="section-title">One team. Full digital ecosystem.</h2>
-                <p class="section-desc">From concept to deployment. We bring your vision to life, building robust software products that scale effortlessly. Here are the core services we provide at standard.</p>
-            </div>
-            <div class="ecosystem__cards">
-                <div class="eco-card">
-                    <div class="eco-icon"><i class="fas fa-code"></i></div>
-                    <h4>Software Engineering<br>& Product</h4>
-                    <p>Custom software tailored for business processes and workflows.</p>
-                    <a href="#" class="card-link">Explore Services &rarr;</a>
-                </div>
-                <div class="eco-card">
-                    <div class="eco-icon"><i class="fas fa-brain"></i></div>
-                    <h4>Generative AI Solutions</h4>
-                    <p>Enhance operational efficiency with intelligent automation, NLP, and GenAI integrations.</p>
-                    <a href="#" class="card-link">Explore Services &rarr;</a>
-                </div>
-                <div class="eco-card">
-                    <div class="eco-icon"><i class="fas fa-cloud-upload-alt"></i></div>
-                    <h4>Cloud Modernization</h4>
-                    <p>Future-proof your IT infrastructure with expert cloud migration strategies.</p>
-                    <a href="#" class="card-link">Explore Services &rarr;</a>
-                </div>
-                <div class="eco-card">
-                    <div class="eco-icon"><i class="fas fa-database"></i></div>
-                    <h4>Data Transformation</h4>
-                    <p>Turn raw data analytics into actionable intelligence to spark business innovation.</p>
-                    <a href="#" class="card-link">Explore Services &rarr;</a>
-                </div>
-            </div>
-        </section>
+      <!-- Process Section -->
+      <section class="process container" id="whyus">
+        <div
+          class="section-head section-head--center mx-auto text-center"
+          style="max-width: 600px; margin: 0 auto; text-align: center"
+        >
+          <div class="badge badge--small mx-auto" style="margin: 0 auto">
+            How we work
+          </div>
+          <h2 class="section-title">
+            A process that earns trust from<br />enterprise buyers
+          </h2>
+          <p class="section-desc">
+            We leverage proven frameworks to build, deploy, and scale robust
+            enterprise platforms that drive digital excellence.
+          </p>
+        </div>
+        <div class="process__steps">
+          <div class="process-step">
+            <div class="step-num">01</div>
+            <h4>Discover</h4>
+            <p>
+              Comprehensive requirements analysis, ideation, and defining
+              project scope.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">02</div>
+            <h4>Architect</h4>
+            <p>
+              System design, database architecture, and technology stack
+              selection.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">03</div>
+            <h4>Build</h4>
+            <p>
+              Agile software engineering, rigorous coding, and frontend
+              execution.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">04</div>
+            <h4>Scale</h4>
+            <p>
+              Deploy to production environments, optimize performance, and
+              maintenance.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <!-- FAQ Section -->
-        <section class="faq container" id="faq">
-            <div class="section-head section-head--center mx-auto text-center" style="max-width: 600px; margin: 0 auto; text-align: center;">
-                <div class="badge badge--small mx-auto" style="margin: 0 auto;">Questions</div>
-                <h2 class="section-title">Frequently asked questions</h2>
-                <p class="section-desc">Have questions? We have answers. Find answers to your most pressing questions about our IT services below. Contact us for more details.</p>
+      <!-- Ecosystem Section -->
+      <section class="ecosystem container" id="ecosystem">
+        <div class="section-head">
+          <div class="badge badge--small">Our Work</div>
+          <h2 class="section-title">One team. Full digital ecosystem.</h2>
+          <p class="section-desc">
+            From concept to deployment. We bring your vision to life, building
+            robust software products that scale effortlessly. Here are the core
+            services we provide at standard.
+          </p>
+        </div>
+        <div class="ecosystem__cards">
+          <div class="eco-card">
+            <div class="eco-icon"><i class="fas fa-code"></i></div>
+            <h4>Software Engineering<br />& Product</h4>
+            <p>
+              Custom software tailored for business processes and workflows.
+            </p>
+            <a href="#" class="card-link">Explore Services &rarr;</a>
+          </div>
+          <div class="eco-card">
+            <div class="eco-icon"><i class="fas fa-brain"></i></div>
+            <h4>Generative AI Solutions</h4>
+            <p>
+              Enhance operational efficiency with intelligent automation, NLP,
+              and GenAI integrations.
+            </p>
+            <a href="#" class="card-link">Explore Services &rarr;</a>
+          </div>
+          <div class="eco-card">
+            <div class="eco-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+            <h4>Cloud Modernization</h4>
+            <p>
+              Future-proof your IT infrastructure with expert cloud migration
+              strategies.
+            </p>
+            <a href="#" class="card-link">Explore Services &rarr;</a>
+          </div>
+          <div class="eco-card">
+            <div class="eco-icon"><i class="fas fa-database"></i></div>
+            <h4>Data Transformation</h4>
+            <p>
+              Turn raw data analytics into actionable intelligence to spark
+              business innovation.
+            </p>
+            <a href="#" class="card-link">Explore Services &rarr;</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq container" id="faq">
+        <div
+          class="section-head section-head--center mx-auto text-center"
+          style="max-width: 600px; margin: 0 auto; text-align: center"
+        >
+          <div class="badge badge--small mx-auto" style="margin: 0 auto">
+            Questions
+          </div>
+          <h2 class="section-title">Frequently asked questions</h2>
+          <p class="section-desc">
+            Have questions? We have answers. Find answers to your most pressing
+            questions about our IT services below. Contact us for more details.
+          </p>
+        </div>
+        <div class="faq__accordion">
+          <div class="faq-item">
+            <button class="faq-btn">
+              What IT services does Inbox Infotech offer?
+              <i class="fas fa-plus"></i>
+            </button>
+            <div class="faq-content">
+              <p>
+                Inbox Infotech provides end-to-end IT solutions including custom
+                software, mobile apps, AI/ML, cloud, ERP, ecommerce,
+                cybersecurity, BI dashboards, UI/UX, and managed services. We
+                act as a one-stop technology partner for businesses of all
+                sizes.
+              </p>
             </div>
-            <div class="faq__accordion">
-                <div class="faq-item">
-                    <button class="faq-btn">What IT services does Inbox Infotech offer? <i class="fas fa-plus"></i></button>
-                    <div class="faq-content">
-                        <p>Inbox Infotech provides end-to-end IT solutions including custom software, mobile apps, AI/ML, cloud, ERP, ecommerce, cybersecurity, BI dashboards, UI/UX, and managed services. We act as a one-stop technology partner for businesses of all sizes.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-btn">Which industries does Inbox Infotech serve? <i class="fas fa-plus"></i></button>
-                    <div class="faq-content">
-                        <p>We work across healthcare, finance, retail, manufacturing, hospitality, education, and pharma. Our solutions are tailored to each industry&rsquo;s specific challenges&mdash;not generic templates.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-btn">How does Inbox Infotech manage projects? <i class="fas fa-plus"></i></button>
-                    <div class="faq-content">
-                        <p>We follow a 4-step process: Discover, Architect, Build, and Scale. This ensures clear planning, agile development, smooth deployment, and long-term support with measurable results.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-btn">Does Inbox Infotech work with global clients? <i class="fas fa-plus"></i></button>
-                    <div class="faq-content">
-                        <p>Yes, we serve clients across the UAE, USA, UK, Australia, Canada, Oman, and India. Our team is experienced in handling global projects, time zones, and compliance needs.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-btn">What AI and automation services do you provide? <i class="fas fa-plus"></i></button>
-                    <div class="faq-content">
-                        <p>We offer machine learning, NLP, computer vision, forecasting, and intelligent automation. We also build real-world AI products&mdash;not just prototypes.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-btn">How do you handle cybersecurity? <i class="fas fa-plus"></i></button>
-                    <div class="faq-content">
-                        <p>We provide 24/7 protection with SOC monitoring, penetration testing, firewalls, IDS/IPS, and AI-based threat detection to prevent attacks before they impact your business.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-btn">What makes Inbox Infotech different from other IT companies? <i class="fas fa-plus"></i></button>
-                    <div class="faq-content">
-                        <p>We combine deep technical expertise with a business-first approach, delivering scalable, result-driven solutions&mdash;not just code. Our focus on AI-driven innovation, transparency, and long-term partnerships makes us a reliable technology partner.</p>
-                    </div>
-                </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-btn">
+              Which industries does Inbox Infotech serve?
+              <i class="fas fa-plus"></i>
+            </button>
+            <div class="faq-content">
+              <p>
+                We work across healthcare, finance, retail, manufacturing,
+                hospitality, education, and pharma. Our solutions are tailored
+                to each industry&rsquo;s specific challenges&mdash;not generic
+                templates.
+              </p>
             </div>
-        </section>
-        
-        <!-- Bottom CTA / Form Section -->
-        <section class="contact-form-section container" id="contact" style="margin-bottom: 80px;">
-            <div class="cta-box form-container" style="display: block;">
-                <div class="cta-content text-center mx-auto" style="max-width: 600px; margin-bottom: 40px; margin-left: auto; margin-right: auto;">
-                    <div class="badge badge--small badge--blue mx-auto" style="margin-bottom: 16px;">Contact us</div>
-                    <h2 style="font-size: 32px; margin-bottom: 16px;">Stop Reacting to IT Problems. Start Preventing Them.</h2>
-                    <p style="color: #94a3b8; font-size: 16px;">Schedule a 30-minute IT risk assessment with our senior architects.</p>
-                </div>
-                
-                <form id="contactForm" class="custom-form">
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label>Name *</label>
-                            <input type="text" name="name" class="form-control" placeholder="Your full name" required />
-                        </div>
-                        <div class="form-group">
-                            <label>Phone *</label>
-                            <input type="tel" name="phone" class="form-control" placeholder="+91..." required />
-                        </div>
-                        <div class="form-group full-width">
-                            <label>Email *</label>
-                            <input type="email" name="email" class="form-control" placeholder="you@company.com" required />
-                        </div>
-                        <div class="form-group">
-                            <label>Industry *</label>
-                            <select name="industry" id="industry" class="form-control" required onchange="toggleOtherField(this, 'industry_other')">
-                                <option value="">Select Industry</option>
-                                <option value="Healthcare">Healthcare</option>
-                                <option value="BFSI">BFSI</option>
-                                <option value="Manufacturing">Manufacturing</option>
-                                <option value="Logistics">Logistics</option>
-                                <option value="SaaS">SaaS</option>
-                                <option value="Other">Other</option>
-                            </select>
-                            <input type="text" name="industry_other" id="industry_other" class="form-control mt-2 d-none" placeholder="Please specify industry" />
-                        </div>
-                        <div class="form-group">
-                            <label>Services *</label>
-                            <select name="services" id="services" class="form-control" required onchange="toggleOtherField(this, 'services_other')">
-                                <option value="">Select Service</option>
-                                <option value="Managed IT Services">Managed IT Services</option>
-                                <option value="Cybersecurity">Cybersecurity</option>
-                                <option value="Cloud Infrastructure">Cloud Infrastructure</option>
-                                <option value="Other">Other</option>
-                            </select>
-                            <input type="text" name="services_other" id="services_other" class="form-control mt-2 d-none" placeholder="Please specify service" />
-                        </div>
-                        <div class="form-group full-width">
-                            <label>Message *</label>
-                            <textarea name="message" class="form-control" rows="4" placeholder="Write your message here..." required></textarea>
-                        </div>
-                    </div>
-                    <div class="text-center" style="margin-top: 30px; text-align: center;">
-                        <button type="submit" id="submitBtn" class="btn btn--primary" style="padding: 14px 40px; font-size: 16px;">
-                            Schedule Assessment
-                        </button>
-                    </div>
-                </form>
-                <div id="snackbar"></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-btn">
+              How does Inbox Infotech manage projects?
+              <i class="fas fa-plus"></i>
+            </button>
+            <div class="faq-content">
+              <p>
+                We follow a 4-step process: Discover, Architect, Build, and
+                Scale. This ensures clear planning, agile development, smooth
+                deployment, and long-term support with measurable results.
+              </p>
             </div>
-        </section>
+          </div>
+          <div class="faq-item">
+            <button class="faq-btn">
+              Does Inbox Infotech work with global clients?
+              <i class="fas fa-plus"></i>
+            </button>
+            <div class="faq-content">
+              <p>
+                Yes, we serve clients across the UAE, USA, UK, Australia,
+                Canada, Oman, and India. Our team is experienced in handling
+                global projects, time zones, and compliance needs.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-btn">
+              What AI and automation services do you provide?
+              <i class="fas fa-plus"></i>
+            </button>
+            <div class="faq-content">
+              <p>
+                We offer machine learning, NLP, computer vision, forecasting,
+                and intelligent automation. We also build real-world AI
+                products&mdash;not just prototypes.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-btn">
+              How do you handle cybersecurity? <i class="fas fa-plus"></i>
+            </button>
+            <div class="faq-content">
+              <p>
+                We provide 24/7 protection with SOC monitoring, penetration
+                testing, firewalls, IDS/IPS, and AI-based threat detection to
+                prevent attacks before they impact your business.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-btn">
+              What makes Inbox Infotech different from other IT companies?
+              <i class="fas fa-plus"></i>
+            </button>
+            <div class="faq-content">
+              <p>
+                We combine deep technical expertise with a business-first
+                approach, delivering scalable, result-driven solutions&mdash;not
+                just code. Our focus on AI-driven innovation, transparency, and
+                long-term partnerships makes us a reliable technology partner.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom CTA / Form Section -->
+      <section
+        class="contact-form-section container"
+        id="contact"
+        style="margin-bottom: 80px"
+      >
+        <div class="cta-box form-container" style="display: block">
+          <div
+            class="cta-content text-center mx-auto"
+            style="
+              max-width: 600px;
+              margin-bottom: 40px;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          >
+            <div
+              class="badge badge--small badge--blue mx-auto"
+              style="margin-bottom: 16px"
+            >
+              Contact us
+            </div>
+            <h2 style="font-size: 32px; margin-bottom: 16px">
+              Stop Reacting to IT Problems. Start Preventing Them.
+            </h2>
+            <p style="color: #94a3b8; font-size: 16px">
+              Schedule a 30-minute IT risk assessment with our senior
+              architects.
+            </p>
+          </div>
+
+          <form id="contactForm" class="custom-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Name *</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Phone *</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-control"
+                  placeholder="+91..."
+                  required
+                />
+              </div>
+              <div class="form-group full-width">
+                <label>Email *</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="you@company.com"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label>Industry *</label>
+                <select
+                  name="industry"
+                  id="industry"
+                  class="form-control"
+                  required
+                  onchange="toggleOtherField(this, 'industry_other')"
+                >
+                  <option value="">Select Industry</option>
+                  <option value="Healthcare">Healthcare</option>
+                  <option value="BFSI">BFSI</option>
+                  <option value="Manufacturing">Manufacturing</option>
+                  <option value="Logistics">Logistics</option>
+                  <option value="SaaS">SaaS</option>
+                  <option value="Other">Other</option>
+                </select>
+                <input
+                  type="text"
+                  name="industry_other"
+                  id="industry_other"
+                  class="form-control mt-2 d-none"
+                  placeholder="Please specify industry"
+                />
+              </div>
+              <div class="form-group">
+                <label>Services *</label>
+                <select
+                  name="services"
+                  id="services"
+                  class="form-control"
+                  required
+                  onchange="toggleOtherField(this, 'services_other')"
+                >
+                  <option value="">Select Service</option>
+                  <option value="IoT Solutions">IoT Solutions</option>
+                  <option value="Sensors & Gateway Development">Sensors & Gateway Development</option>
+                  <option value="E-commerce Development">E-commerce Development</option>
+                  <option value="CRM / ERP Solutions">CRM / ERP Solutions</option>
+                  <option value="AI / ML Development">AI / ML Development</option>
+                  <option value="BI Dashboard & Analytics">BI Dashboard & Analytics</option>
+                  <option value="Low-Code / No-Code Development">Low-Code / No-Code Development</option>
+                  <option value="Modern Web Development">Modern Web Development</option>
+                  <option value="Mobile App Development">Mobile App Development</option>
+                  <option value="AI Automation Solutions">AI Automation Solutions</option>
+                  <option value="Cloud & DevOps Services">Cloud & DevOps Services</option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                  <option value="API Integration Services">API Integration Services</option>
+                  <option value="Custom Software Development">Custom Software Development</option>
+                  <option value="Maintenance & Support">Maintenance & Support</option>
+                  <option value="Other">Others</option>
+                </select>
+                <input
+                  type="text"
+                  name="services_other"
+                  id="services_other"
+                  class="form-control mt-2 d-none"
+                  placeholder="Please specify service"
+                />
+              </div>
+              <div class="form-group full-width">
+                <label>Message *</label>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Write your message here..."
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div
+              class="text-center"
+              style="margin-top: 30px; text-align: center"
+            >
+              <button
+                type="submit"
+                id="submitBtn"
+                class="btn btn--primary"
+                style="padding: 14px 40px; font-size: 16px"
+              >
+                Schedule Assessment
+              </button>
+            </div>
+          </form>
+          <div id="snackbar"></div>
+        </div>
+      </section>
     </main>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
