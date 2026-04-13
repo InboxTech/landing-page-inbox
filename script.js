@@ -90,10 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const contactForm = document.getElementById('contactForm');
     if(contactForm) {
-        // Initialize EmailJS from config.js
-        if (typeof emailjs !== 'undefined' && typeof ENV !== 'undefined') {
+        // Initialize EmailJS
+        if (typeof emailjs !== 'undefined') {
             emailjs.init({
-                publicKey: ENV.EMAILJS_PUBLIC_KEY,
+                publicKey: "5pREpCJoo34qfKYd-",
             });
         }
 
@@ -107,10 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
             btn.disabled = true;
             btn.style.opacity = '0.7';
 
-            const serviceId = typeof ENV !== 'undefined' ? ENV.EMAILJS_SERVICE_ID : '';
-            const templateId = typeof ENV !== 'undefined' ? ENV.EMAILJS_TEMPLATE_ID : '';
-
-            emailjs.sendForm(serviceId, templateId, form)
+            emailjs.sendForm('service_jm55qb2', 'template_kos6yrc', form)
             .then(() => {
                 showSnackbar("Your assessment request has been received.", "success");
                 form.reset();
