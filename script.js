@@ -74,4 +74,64 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Form submission and toggle logic
+    window.toggleOtherField = function(selectElement, targetId) {
+        const target = document.getElementById(targetId);
+        if (selectElement.value === "Other") {
+            target.classList.remove("d-none");
+            target.required = true;
+        } else {
+            target.classList.add("d-none");
+            target.required = false;
+            target.value = "";
+        }
+    }
+
+    const contactForm = document.getElementById('contactForm');
+    if(contactForm) {
+        // Initialize EmailJS from config.js
+        if (typeof emailjs !== 'undefined' && typeof ENV !== 'undefined') {
+            emailjs.init({
+                publicKey: ENV.EMAILJS_PUBLIC_KEY,
+            });
+        }
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const form = this;
+            const btn = document.getElementById('submitBtn');            
+            
+            btn.innerHTML = 'Processing...';
+            btn.disabled = true;
+            btn.style.opacity = '0.7';
+
+            const serviceId = typeof ENV !== 'undefined' ? ENV.EMAILJS_SERVICE_ID : '';
+            const templateId = typeof ENV !== 'undefined' ? ENV.EMAILJS_TEMPLATE_ID : '';
+
+            emailjs.sendForm(serviceId, templateId, form)
+            .then(() => {
+                showSnackbar("Your assessment request has been received.", "success");
+                form.reset();
+            })
+            .catch((error) => {
+                console.error("EmailJS Error:", error);
+                showSnackbar("Connection error. Please try again.", "error");
+            })
+            .finally(() => {
+                btn.innerHTML = "Schedule Assessment";
+                btn.disabled = false;
+                btn.style.opacity = '1';
+            });
+        });
+    }
+
+    function showSnackbar(msg, type) {
+        const s = document.getElementById('snackbar');
+        s.innerText = msg;
+        s.style.backgroundColor = type === "success" ? "#10b981" : "#ef4444";
+        s.classList.add("show");
+        setTimeout(() => { s.classList.remove("show"); }, 3500);
+    }
 });
